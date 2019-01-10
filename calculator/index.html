@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,45 +17,26 @@
     <div class="button" id="num8" onclick="pressed(8)">8</div>
     <div class="button" id="num9" onclick="pressed(9)">9</div>
     <div class="button" id="plus" onclick="pressed('+')">+</div>
-    <br><br><br>
+    <br><br><br><br>
     <div class="button" id="num4" onclick="pressed(4)">4</div>
     <div class="button" id="num5" onclick="pressed(5)">5</div>
     <div class="button" id="num6" onclick="pressed(6)">6</div>
     <div class="button" id="minus" onclick="pressed('-')">-</div>
-    <br><br><br>
+    <br><br><br><br>
     <div class="button" id="num1" onclick="pressed(1)">1</div>
     <div class="button" id="num2" onclick="pressed(2)">2</div>
     <div class="button" id="num3" onclick="pressed(3)">3</div>
     <div class="button" id="division" onclick="pressed('/')">/</div>
-    <br><br><br>
+    <br><br><br><br>
     <div class="button" id="num0" onclick="pressed(0)">0</div>
     <div class="button" id="dot" onclick="pressed('.')">.</div>
     <div class="button" id="assign" onclick="calculate()">=</div>
     <div class="button" id="mul" onclick="pressed('*')">*</div>
-    <br><br><br>
+    <br><br><br><br>
     <div class="clear" onclick="clearer()">CLEAR</div>
 
-    <script>
-        var text ="";
-        function pressed(x) {
-
-            
-            console.log(parseInt(document.getElementById("answer-box").textContent) + 1);
-            text += x;
-            document.getElementById("answer-box").innerHTML = text;
-        }
-
-        function calculate(){
-            document.getElementById("answer-box").innerHTML = eval(text);
-            text = "";
-        }
-
-        function clearer(){
-            text = "";
-            document.getElementById("answer-box").innerHTML = "";
-        }
-        
-    </script>
+    
+    <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
